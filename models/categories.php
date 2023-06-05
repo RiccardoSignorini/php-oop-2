@@ -1,15 +1,16 @@
 <?php
 
-    require_once './shop.php';
+    require_once './products.php';
 
-    class Dogs extends Shop{
-        public $food;
-        public $toys;
-        public $accessories;
-    };
+    // ESTENSIONE PRODUCTS
+    class Categories extends Products{
+        public $name;
+        public $icon;
 
-    class Cats extends Shop{
-        public $food;
-        public $toys;
-        public $accessories;
-    };
+        public function __construct($_name, $_icon){
+            $this->name = $_name;
+            $this->icon = $_icon;
+        }
+    }
+
+    

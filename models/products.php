@@ -1,36 +1,16 @@
 <?php
 
-    require_once './categories.php';
+    // PRINCIPALE
+    class Products{
+        public $name;
+        public $type;
+        public $price;
+        public $image;
 
-    // ESTENSIONE CLASSE CIBO
-    class Food extends Dogs{
-        public $meat;
-        public $crunchy;
-    };
-
-    class Food extends Cats{
-        public $meat;
-        public $crunchy;
-    };
-
-    // ESTENSIONE CLASSE GIOCHI
-    class Toys extends Dogs{
-        public $ball;
-        public $puppet;
-    };
-
-    class Toys extends Cats{
-        public $ball;
-        public $puppet;
-    };
-
-    // ESTENSIONE CLASSE ACCESSORI
-    class Accessories extends Dogs{
-        public $leash;
-        public $jacket;
-    };
-
-    class Accessories extends Cats{
-        public $leash;
-        public $jacket;
+        public function __construct($_name, $_type, $_price, $_image){
+            $this->name = $_name;
+            $this->type = $_type;
+            $this->price = $_price;
+            $this->image = $_image;
+        }
     };
