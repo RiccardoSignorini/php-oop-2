@@ -1,6 +1,6 @@
 <?php
 
-    require_once './products.php';
+    require_once __DIR__ . '/products.php';
 
     // ESTENSIONE PRODUCTS
     class Categories extends Products{
