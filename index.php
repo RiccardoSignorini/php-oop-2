@@ -8,7 +8,14 @@
     $for_cats = new Categories('For Cats', 'fa-solid fa-cat');
 
     // ISTANZE PRODUCTS
-    $product = new Products('Crocchette', 'Food', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
+    $dog_food_first = new Products('Crocchette', 'Food', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
+    $dog_accessory_first = new Products('Collare', 'Accessory', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
+    $dog_accessory_second = new Products('Vestito', 'Accessory', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
+    $dog_toy_first = new Products('Palla', 'Toy', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
+    $cat_food_first = new Products('Carne', 'Food', '19,99', './assets/img/crocchette_cani.jpeg', $for_cats);
+    $cat_toy_first = new Products('Topo', 'Toy', '19,99', './assets/img/crocchette_cani.jpeg', $for_cats);
+    $cat_toy_second = new Products('Pallina', 'Toy', '19,99', './assets/img/crocchette_cani.jpeg', $for_cats);
+    $cat_accessory_first = new Products('Vestito', 'Accessory', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
 ?>
 
 <!DOCTYPE html>
