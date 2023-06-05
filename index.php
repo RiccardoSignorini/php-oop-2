@@ -9,13 +9,13 @@
 
     // ISTANZE PRODUCTS
     $dog_food_first = new Products('Crocchette', 'Food', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
-    $dog_accessory_first = new Products('Collare', 'Accessory', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
-    $dog_accessory_second = new Products('Vestito', 'Accessory', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
-    $dog_toy_first = new Products('Palla', 'Toy', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
-    $cat_food_first = new Products('Carne', 'Food', '19,99', './assets/img/crocchette_cani.jpeg', $for_cats);
-    $cat_toy_first = new Products('Topo', 'Toy', '19,99', './assets/img/crocchette_cani.jpeg', $for_cats);
-    $cat_toy_second = new Products('Pallina', 'Toy', '19,99', './assets/img/crocchette_cani.jpeg', $for_cats);
-    $cat_accessory_first = new Products('Vestito', 'Accessory', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs);
+    $dog_accessory_first = new Products('Collare', 'Accessory', '29,99', './assets/img/collare_cani.jpeg', $for_dogs);
+    $dog_accessory_second = new Products('Vestito', 'Accessory', '59,99', './assets/img/vestito_cani.jpeg', $for_dogs);
+    $dog_toy_first = new Products('Palla', 'Toy', '9,99', './assets/img/palla_cani.jpeg', $for_dogs);
+    $cat_food_first = new Products('Carne', 'Food', '14,99', './assets/img/carne_gatti.jpeg', $for_cats);
+    $cat_toy_first = new Products('Topo', 'Toy', '5,99', './assets/img/topo_gatti.jpeg', $for_cats);
+    $cat_toy_second = new Products('Palline', 'Toy', '7,99', './assets/img/palline_gatti.jpeg', $for_cats);
+    $cat_accessory_first = new Products('Vestito', 'Accessory', '29,99', './assets/img/vestito_gatti.jpeg', $for_dogs);
 ?>
 
 <!DOCTYPE html>
