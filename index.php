@@ -1,5 +1,6 @@
 <?php
 
+    // COLLEGAMENTI CON MODELS
     require_once __DIR__ . '/models/categories.php';
     require_once __DIR__ . '/models/products.php';
 
@@ -8,10 +9,10 @@
     $for_cats = new Categories('For Cats', 'fa-solid fa-cat');
 
     // ISTANZE PRODUCTS
-    $array_prodotti = [
+    $array_products = [
         $dog_food_first = new Products('Crocchette', 'Food', '19,99', './assets/img/crocchette_cani.jpeg', $for_dogs),
         $dog_accessory_first = new Products('Collare', 'Accessory', '29,99', './assets/img/collare_cani.jpeg', $for_dogs),
-        $dog_accessory_second = new Products('Vestito', 'Accessory', '59,99', './assets/img/vestito_cani.jpeg', $for_dogs),
+        $dog_accessory_second = new Products('Vestito', 'Accessory', '59,99', './assets/img/vestito_cani.webp', $for_dogs),
         $dog_toy_first = new Products('Palla', 'Toy', '9,99', './assets/img/palla_cani.jpeg', $for_dogs),
         $cat_food_first = new Products('Carne', 'Food', '14,99', './assets/img/carne_gatti.jpeg', $for_cats),
         $cat_toy_first = new Products('Topo', 'Toy', '5,99', './assets/img/topo_gatti.jpeg', $for_cats),
@@ -43,12 +44,13 @@
             <div class="container">
                 <div class="row">
                     <!-- CICLO CARD PER I PRODOTTI -->
-                    <?php foreach($array_prodotti as $elem) : ?>
+                    <?php foreach($array_products as $elem) : ?>
 
                     <div class="col-4 my-3">
                         <div class="card">
                             <img src="<?php echo $elem->image ?>" class="card-img-top" alt="<?php echo $elem->name ?>">
                             <div class="card-body">
+                                <p class="card-text"><?php echo $elem->getIcon() ?></p>
                                 <h5 class="card-title"><?php echo $elem->name ?></h5>
                                 <p class="card-text"><?php echo $elem->type ?></p>
                                 <p class="card-text"><?php echo "€" . $elem->price ?></p>
